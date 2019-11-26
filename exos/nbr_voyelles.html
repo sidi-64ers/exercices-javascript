@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function compterVoyelles(mot) {
+  let nbVoyelles = 0;
+  for (const lettre of mot) {
+    //const lettreMin = lettre.toLowerCase();
+    if (
+      lettre === "a", "A" ||
+      lettre === "e", "B" ||
+      lettre === "i", "I" ||
+      lettre === "o", "O" ||
+      lettre === "u", "U" ||
+      lettre === "y", "Y"
+    ) {
+      nbVoyelles++;
+    }
+  }
+  return nbVoyelles;
+}
+
+console.log(compterVoyelles("RadAr")); // 2
+console.log(compterVoyelles("Tic et Tac")); // 3
+console.log(compterVoyelles("Oasis Oasis Oh")); // 7
+
+
+
+    </script>
+</body>
+</html>

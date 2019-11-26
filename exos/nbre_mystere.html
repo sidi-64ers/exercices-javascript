@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Enfin le jeu du nombre mystère :)
+
+        // Faites choisir un nombre aléatoire à l'ordinateur (chercher "random")
+
+        // Puis faites-le deviner à l'utilisateur :
+
+        // - s'il le trouve, c'est gagné !
+        // - si le nombre proposé est trop grand : dites-le lui et proposez-lui de retenter un autre nombre
+        // - s'il est trop petit : idem 
+
+        // Limitez enfin le nombre de tentatives à 10.
+
+        //##############################################################""
+
+        console.log("Jeu mystère");
+
+        for (nbCoups = 1; nbCoups <= 10; nbCoups++) {
+
+            let nbrMyst = (Math.floor(Math.random() * 10));
+            console.log(nbrMyst);
+            let userChoice = (prompt("Trouver le nombre mystère"));
+            console.log(nbCoups);
+
+            if (userChoice > nbrMyst) {
+                alert("Reessaie, t'as vu trop gros");
+            } else if (userChoice < nbrMyst) {
+                alert("Retente ta chance, t'as vu trop petit");
+            } else {
+                alert("quel chattard");
+                break;
+            }
+            if (nbCoups === 10) {
+                alert("T'as utilisé toutes tes chances, t'es un NAZ ! ");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+   

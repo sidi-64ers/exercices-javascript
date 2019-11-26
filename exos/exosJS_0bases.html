@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// ###################### EX 1
+
+// Codez un script qui simule un manège qui fait 10 tours.
+
+// Vous devez obtenir :
+
+//     Le manège démarre
+//     C'est le tour numéro 1
+//     C'est le tour numéro 2
+//     ...
+//     C'est le tour numéro 10
+//     Le manège s'arrête.
+
+// Complétez votre code en demandant à l'utilisateur pour combien de ticket il veut rester sur le manège ...
+// (Exemple : 3 tickets soit 3 fois 10 tours ...)
+
+// ############################################################""
+
+// choixTicket()
+// function choixTicket () {
+//     let x = Number(prompt("Combien de tickets ? 1 ticket 10 tours"));
+//     if (x != 0) {
+//         manege(x)
+//     } else {
+//         console.log("Bye Bye");
+//     }
+// };
+
+// function manege(ticket) {
+//     while (ticket > 0) {
+//         for (i=1; i<=10; i++) {
+//             console.log("le manège démarre");
+//             console.log(`C'est le tour ${i} du manège`);
+//             console.log("le mannège s'arrête");
+//             }
+//     ticket--
+//     } 
+//     if (ticket === 0) {
+//         alert("Voulez vous refaire un tour ?");
+//         choixTicket()
+//     }
+// };
+
+//#########################"### EX 2
+
+// Sauriez-vous automatiser l'affichage de la table de multiplication ?
+
+// Demandez un chiffre à l'utilisateur, et si le chiffre est correct, afficher la table dans la page Html.
+
+// Si l'utilisateur renseigne un nombre incorrect, proposez lui de le resaisir.
+
+
+// Exo 2  afficher les tables
+  // let table = 1;
+  // for (i=1; i<=10;i++) {
+  //   console.log(`${table} * ${i} =${table * i}`);
+  // }
+  
+//  ################################# EX 3
+
+//  Ecrivez un programme qui affiche tous les nombres entre 1 et 100 avec les exceptions suivantes :
+
+// - Il affiche "Fizz" à la place du nombre si celui-ci est divisible par 3
+// - Il affiche "Buzz" à la place du nombre si celui-ci est divisible par 5 et non par 3
+// - Il affiche "FizzBuzz" à la place du nombre si celui-ci est divisible à la fois par 3 et par 5
+
+// Vous pouvez utiliser l'opérateur modulo % qui renvoie le reste de la division d'un entier par un autre.xo 3 Fizz Buzz
+
+// ##############################################################
+
+// for (b=1; b <=100; b++) {
+//   if  ((b % 5 === 0) && (b % 3 === 0)) {
+//   console.log("FizzBuzz");
+//   } else if (b % 5 === 0) {
+//     console.log("Buzz");
+//   } else if (b % 3 === 0) {
+//     console.log("Fizz");
+//   } else {
+//     console.log(b);
+//   }
+// }
+// 
+
+// #####################################"" EX 4
+
+// Enfin le jeu du nombre mystère :)
+
+// Faites choisir un nombre aléatoire à l'ordinateur (chercher "random")
+
+// Puis faites-le deviner à l'utilisateur :
+
+// - s'il le trouve, c'est gagné !
+// - si le nombre proposé est trop grand : dites-le lui et proposez-lui de retenter un autre nombre
+// - s'il est trop petit : idem 
+
+// Limitez enfin le nombre de tentatives à 10.
+
+//##############################################################""
+
+// console.log("Jeu mystère");
+
+// for (nbCoups=1; nbCoups<=5; nbCoups++) {
+
+// var cache = (Math.floor(Math.random() * 10));
+// console.log(cache);
+// var util = (prompt("Trouver le nombre mystère"));
+// console.log(nbCoups);
+
+//   if ( util > cache) {
+//     alert("Retente ta chance, t'as vu trop gros");
+//   } else if ( util < cache) {
+//     alert("Retente ta chance, t'as vu trop petit");
+//   } else {
+//     alert("ça va t'as gagné");
+//     break;  
+//   }  
+//   if (nbCoups === 5) {
+//     alert("T'as utilisé toutes tes chances, c'est perdu looser ! ");
+//   }
+// }
+
+    </script>
+</body>
+</html>

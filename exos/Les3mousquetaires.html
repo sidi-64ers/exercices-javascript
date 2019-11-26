@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        const mousquetaires = ["Athos", "Porthos", "Aramis"];
+
+for (let i = 0; i < mousquetaires.length; i++) {
+  console.log(mousquetaires[i]);
+}
+  mousquetaires.push("d'Artagnan");
+  console.log(mousquetaires.length);
+
+mousquetaires.forEach(mousquetaire => {
+  console.log(mousquetaire);
+});
+mousquetaires.splice(2, 1); 
+console.log(mousquetaires)
+
+for (const mousquetaire of mousquetaires) {
+  console.log(mousquetaire);
+}
+
+
+    </script>
+</body>
+</html>
