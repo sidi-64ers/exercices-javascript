@@ -8,6 +8,10 @@
 </head>
 <body>
     <script>
+
+        const coupsMax = 4;
+        const nbrMyst = (Math.floor(Math.random() * 10));
+        console.log(nbrMyst);
         // Enfin le jeu du nombre mystère :)
 
         // Faites choisir un nombre aléatoire à l'ordinateur (chercher "random")
@@ -23,24 +27,25 @@
         //##############################################################""
 
         console.log("Jeu mystère");
+        
 
-        for (nbCoups = 1; nbCoups <= 10; nbCoups++) {
-
-            let nbrMyst = (Math.floor(Math.random() * 10));
-            console.log(nbrMyst);
+        for (i = 0; i < coupsMax; i++) {
+            console.log("Nombre mystère", nbrMyst);
             let userChoice = (prompt("Trouver le nombre mystère"));
-            console.log(nbCoups);
 
             if (userChoice > nbrMyst) {
                 alert("Reessaie, t'as vu trop gros");
             } else if (userChoice < nbrMyst) {
                 alert("Retente ta chance, t'as vu trop petit");
-            } else {
-                alert("quel chattard");
-                break;
             }
-            if (nbCoups === 10) {
-                alert("T'as utilisé toutes tes chances, t'es un NAZ ! ");
+
+            if(i == coupsMax){
+                alert("Nombre de tentatives maximum atteint. Désolé, tu ne gagneras pas au loto... à moins que ??? ...");
+            }
+
+            if(userChoice == nbrMyst){
+                alert("quel chanceux");
+                break;
             }
         }
 

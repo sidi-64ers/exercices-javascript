@@ -11,20 +11,22 @@
         const mousquetaires = ["Athos", "Porthos", "Aramis"];
 
 for (let i = 0; i < mousquetaires.length; i++) {
-  console.log(mousquetaires[i]);
+  console.log("bOUCLE FOR I", mousquetaires[i]);
 }
   mousquetaires.push("d'Artagnan");
   console.log(mousquetaires.length);
 
 mousquetaires.forEach(mousquetaire => {
-  console.log(mousquetaire);
+  console.log("BOUCLE FOReACH",  mousquetaire);
 });
-mousquetaires.splice(2, 1); 
+mousquetaires.splice(1, 2); 
 console.log(mousquetaires)
 
-for (const mousquetaire of mousquetaires) {
-  console.log(mousquetaire);
+for (const sidi of mousquetaires) {
+  console.log("Boucel avec sisi", sidi);
 }
+
+console.log(mousquetaires);
 
 
     </script>
