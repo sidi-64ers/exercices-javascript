@@ -1,0 +1,28 @@
+section{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height:100vh;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#ball{
+    margin:auto;
+    width:100px;
+    height: 100px;
+    background-color:red;
+    border-radius:50%;
+}
+#area{
+    margin:auto;
+    width:100px;
+    height: 100px;
+    border:2px dashed black;
+    border-radius: 50%;
+}
+
