@@ -33,6 +33,7 @@ xhr.send();
 
 
 
+
 // function chapitre(chap) {
 //     let maDiv = document.createElement("div");
 //     let monTitre = document.createElement("h1");
